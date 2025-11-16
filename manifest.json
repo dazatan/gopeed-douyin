@@ -1,14 +1,11 @@
 {
   "name": "douyin-downloader",
-  "author": "dazatan",
+  "author": "gopeed-user",
   "title": "抖音视频下载器",
-  "description": "解析并下载抖音无水印视频",
+  "description": "解析并下载抖音无水印视频，支持多种链接格式",
   "icon": "icon.png",
-  "version": "1.0.0",
-  "homepage": "https://github.com/dazatan/",
-  "repository": {
-    "url": "https://github.com/dazatan/gopeed-douyin"
-  },
+  "version": "1.1.0",
+  "homepage": "https://github.com/dazatan/gopeed-douyin",
   "scripts": [
     {
       "event": "onResolve",
@@ -16,7 +13,9 @@
         "urls": [
           "*://v.douyin.com/*",
           "*://www.douyin.com/video/*",
-          "*://www.douyin.com/note/*"
+          "*://www.douyin.com/note/*",
+          "*://www.iesdouyin.com/*",
+          "*://douyin.com/*"
         ]
       },
       "entry": "dist/index.js"
@@ -24,11 +23,11 @@
   ],
   "settings": [
     {
-      "name": "apiEndpoint",
-      "title": "解析API端点",
-      "description": "用于解析抖音视频的API服务地址",
-      "type": "string",
-      "default": "https://api.douyin.wtf"
+      "name": "timeout",
+      "title": "请求超时时间(毫秒)",
+      "description": "解析请求的超时时间",
+      "type": "number",
+      "default": 30000
     }
   ]
 }
