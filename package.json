@@ -1,0 +1,13 @@
+{
+  "name": "gopeed-douyin-plugin",
+  "version": "1.1.0",
+  "description": "抖音视频下载插件 for Gopeed",
+  "type": "module",
+  "scripts": {
+    "dev": "gopeed-plugin dev",
+    "build": "gopeed-plugin build"
+  },
+  "devDependencies": {
+    "@gopeed/gopeed-plugin": "^1.0.0"
+  }
+}
